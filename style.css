@@ -1,0 +1,160 @@
+html, body { 
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(120deg, #FF6742, #D43D94, #3D99D7);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.design {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    min-height: 650px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), white);
+    transition: all ease 0.3s;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.login {
+    z-index: 5;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    min-height: 650px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.481);
+    transition: all ease 0.5s;
+    transition-property: all;
+    border-radius: 20px;
+}
+
+.login:hover {
+    border-bottom: 10px solid #D53F89;
+}
+.login:hover ~ .design {
+    left: 25%;
+}
+
+.logo {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(#5E65EE, #D53F89, #FF6F43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.logo img {
+    width: 40%;
+}
+
+.loginInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
+    position: relative;
+    top: -50px;
+    border-radius: 20px;
+}
+
+.title span {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.727);
+}
+
+.inputs {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+.input input {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 15px;
+    width: 70%;
+    padding: 5px;
+    transition: all ease 0.3s;
+}
+.input input:hover {
+    width: 85%;
+}
+
+.inputHover {
+    width: 85%;
+}
+
+.inputTitle {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.inputTitle span {
+    background: -webkit-linear-gradient(#fe0094, #1d27f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.acceptBtn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.acceptBtn button {
+    width: 50%;
+    background: linear-gradient(90deg, #D43D94, #5E65EE);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.acceptBtn button:hover {
+    background: linear-gradient(90deg, #D43D94, #5E65EE);
+    width: 75%;
+}
+
+.forgotPassword a {
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    position: relative;
+    bottom: 20px;
+}
+.contacts img {
+    width: 45px;
+    cursor: pointer;
+}
